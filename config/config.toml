@@ -1,0 +1,22 @@
+title = "config"
+
+[general]
+num_epochs = 100
+optimizer = "Adam"
+scheduler = ""
+loss_fn = "CrossEntropyLoss"
+lr = 0.005
+weight_decay = 0
+
+
+[model]
+type = "TemplateNeuralNetwork"
+num_input_features = 10
+num_output_features = 100
+hidden_layer_size = 10
+hidden_layer_type = ""
+
+[dataset]
+type = "TemplateDataset"
+path = ""
+batch_size = 100
